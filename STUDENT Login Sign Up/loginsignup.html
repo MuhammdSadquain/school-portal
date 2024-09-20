@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STUDENT SignUp | Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="STUDstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form signup">
+            <h2>Student Sign Up</h2>
+            <!-- <div class="inputBox">
+                <input id="username" type="text" required="required">
+                <i class="fa-regular fa-user"></i>
+                <span>username</span>
+            </div> -->
+            <div class="inputBox">
+                <input id="email" type="text" required="required">
+                <i class="fa-regular fa-envelope"></i>
+                <span>email address</span>
+            </div>
+            <div class="inputBox">
+                <input id="password" type="password" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <span>create password</span>
+            </div>
+            <!-- <div class="inputBox">
+                <input id="confirmpass" type="password" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <span>confirm password</span>
+            </div> -->
+            <div class="inputBox">
+                <input id="signupbtn" class="createacc" type="submit" value="Create Account">
+            </div>
+            <p>Already a member ? <a href="#" class="login">Log in</a></p>
+            <div class="inputBox">
+                <a id="signupbtn" class="createacc" type="submit"    href="../index.html">Back to Home page</a>
+                    <!-- <input id="signupbtn" class="createacc" type="submit" value="Back to Home page"> -->
+                </div>
+        </div>
+        
+        <div class="form signin">
+            <h2> Student Sign In</h2>
+            <div class="inputBox">
+                <input id="loginEmail" type="text" required="required">
+                <i class="fa-regular fa-envelope"></i>
+                <span>email address</span>
+            </div>
+            <div class="inputBox">
+                <input id="LoginPass" type="password" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <span>password</span>
+            </div>
+            <div class="inputBox">
+                <input id="Login" type="submit" value="Login">
+            </div>
+            <p>Not Registered ? <a href="" class="create">Create an account</a></p>
+            <div class="inputBox">
+                <a id="signupbtn" class="createacc" type="submit"    href="../index.html">Back to Home page</a>
+                    <!-- <input id="signupbtn" class="createacc" type="submit" value="Back to Home page"> -->
+                </div>
+        </div>
+
+    </div>
+
+    <script>
+        let login = document.querySelector('.login');
+        let create = document.querySelector('.create');
+        let container = document.querySelector('.container');
+
+        login.onclick = function(){
+            container.classList.add('signinForm');
+        }
+        
+        create.onclick = function(){
+            container.classList.remove('signinForm');
+        }
+    </script>
+</body>
+
+<!-- <script type="module" src="app.js"></script> -->
+<script type="module" src="STUDfirebase.js"></script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+  <div class="container"><!-- <H1>Hello</H1> -->
+    <div id="admin-portal" class="hidden">
+        <h2>Administration Portal</h2>
+        <form id="add-student-form" onsubmit="addStudent(event)">
+            <h3>Add Students</h3>
+            <input type="text" id="first-name" placeholder="First Name" required>
+            <input type="text" id="last-name" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="text" id="cnic" placeholder="CNIC" required>
+            <button type="submit">Add Student</button>
+        </form>
+        <form id="upload-marks-form" onsubmit="uploadMarks(event)">
+            <h3>Upload Student Marks</h3>
+            <input type="text" id="course" placeholder="Course" required>
+            <input type="text" id="student-id" placeholder="Student ID (CNIC)" required>
+            <input type="number" id="marks" placeholder="Marks" required>
+            <input type="number" id="total-marks" placeholder="Total Marks" required>
+            <input type="text" id="grade" placeholder="Grade" required>
+            <button type="submit">Upload Marks</button>
+        </form>
+    </div>
+
+    <!-- <div id="student-portal" class="hidden">
+        <h2>Student Portal</h2>
+        <form id="edit-profile-form" onsubmit="editProfile(event)">
+            <h3>Edit Profile</h3>
+            <input type="text" id="edit-cnic" placeholder="CNIC" required>
+            <input type="text" id="edit-first-name" placeholder="First Name" required>
+            <input type="text" id="edit-last-name" placeholder="Last Name" required>
+            <button type="submit">Save Changes</button>
+        </form>
+        <form id="result-form" onsubmit="getResult(event)">
+            <h3>Check Result</h3>
+            <input type="text" id="result-cnic" placeholder="Enter CNIC" required>
+            <button type="submit">Find Result</button>
+        </form>
+    </div> -->
+  </div>
+</body>
+<script type="module" src="ADMINdashboard.js" defer></script>
+
+</html>

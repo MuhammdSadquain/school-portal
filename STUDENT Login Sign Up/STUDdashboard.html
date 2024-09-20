@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Students</h1>
+    <div id="student-portal" class="hidden">
+        <h2>Student Portal</h2>
+        <form id="edit-profile-form" onsubmit="editProfile(event)">
+            <h3>Edit Profile</h3>
+            <input type="text" id="edit-cnic" placeholder="CNIC" required>
+            <input type="text" id="edit-first-name" placeholder="First Name" required>
+            <input type="text" id="edit-last-name" placeholder="Last Name" required>
+            <button type="submit">Save Changes</button>
+        </form>
+        <form id="result-form" onsubmit="getResult(event)">
+            <h3>Check Result</h3>
+            <input type="text" id="result-cnic" placeholder="Enter CNIC" required>
+            <button type="submit">Find Result</button>
+        </form>
+    </div>
+</body>
+<script type="module" src="../ADMIN Login Sign Up/ADMINdashboard.js"></script>
+</html>
